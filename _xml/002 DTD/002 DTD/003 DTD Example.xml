@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE pricelist [
+  <!ELEMENT pricelist (car+)>
+  <!ELEMENT car (title, brand, price)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT brand (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+]>
+<pricelist>
+  <car>
+    <title>Cayene</title>
+    <brand>Porche</brand>
+    <price>100 грн.</price>
+    <!--<speed>2000</speed>-->
+  </car>
+  <!--<bike>
+    <title>B500</title>
+  </bike>-->
+</pricelist>

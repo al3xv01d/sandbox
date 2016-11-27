@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Class Work</title>
+    <script>
+        window.onload = function(){
+            var form = document.getElementsByTagName('form')[0], inputs = document.getElementsByTagName('input'),
+                    errorAll = document.getElementById('errorAll');
+            // Проверка на заполнение полей
+            form.addEventListener('submit', function (e) {
+                var flag = true;
+                for(var i = 0; i<inputs.length;i++){
+                    if(inputs[i].value.length == 0){
+                        flag = !flag;
+                    }
+                }
+                if(flag){
+                    e.preventDefault();
+                    errorAll.style.display = 'block';
+                }
+                else{
+                    errorAll.style.display = 'none';
+                }
+            })
+            // Проверка на подтверждение пароля
+            var pass = document.getElementById('pass'), repass = document.getElementById('repass'),
+                    error = document.getElementById('error');
+            repass.onblur = function(){
+                if(pass.value === repass.value){
+                    error.style.display = 'none';
+                }
+                else{
+                    error.style.display = 'block';
+                }
+            }
+            // E-mail проверка
+            var mail = document.getElementById('email'), errorMail = document.getElementById('errorMail'),
+                    pattern = /\w+@\w+.\w+/g;
+            mail.onblur = function(){
+                if(pattern.test(mail.value)){
+                    errorMail.style.display = 'none';
+                }
+                else{
+                    errorMail.style.display = 'block';
+                }
+            }
+        }
+    </script>
+</head>
+    <style>
+        body{
+            width: 300px;
+            margin: auto;
+        }
+        form{
+            display: table-caption;
+        }
+        div{
+            margin: 15px;
+        }
+        #submit{
+            clear: both;
+            margin: 15px;
+        }
+        span{
+            display: none;
+            color: red;
+            position: absolute;
+        }
+    </style>
+<body>
+<form>
+    <div>
+        <label for="fName">Имя</label>
+        <input id="fName" type="text"/>
+    </div>
+    <div>
+        <label for="lName">Фамилия</label>
+        <input id="lName" type="text"/>
+    </div>
+    <div>
+        <label for="pass">Пароль</label>
+        <input id="pass" type="text"/>
+    </div>
+    <div>
+        <label for="repass">Потдверждение пароля</label>
+        <input id="repass" type="text"/>
+        <span id="error">Пароли не совпадают!</span>
+    </div>
+    <div>
+        <label for="email">E-mail</label>
+        <input id="email" type="text"/>
+        <span id="errorMail">Не верный формат! email@mail.com</span>
+    </div>
+    <div>
+        <label for="pol">Пол</label>
+        <select id="pol">
+            <option value="man">Мужчина</option>
+            <option value="female">Женщина</option>
+        </select>
+    </div>
+    <input id="submit" type="submit"/>
+    <span id="errorAll">Все поля должны быть заполнены!</span>
+</form>
+</body>
+</html>

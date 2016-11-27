@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--В случае, если элемент будет состоять из разнотипных значений, компонент list нам не подойдет.
+Для такого описания
+используется простой тип объединения, который определяется компонентом union. 
+В его атрибуте memberTypes можно указывать имена типов, которые планируется объединить.
+Например: <xs:union memberTypes="xs:string xs:integer listFontEffects" /> 
+-->
+<root  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:noNamespaceSchemaLocation="006 XML Schema Union.xsd">
+  <jeans_size>medium</jeans_size>
+  <jeans_size>40</jeans_size>
+  <!--<jeans_size>43</jeans_size>-->
+  <!--<jeans_size>xl</jeans_size>-->
+</root>

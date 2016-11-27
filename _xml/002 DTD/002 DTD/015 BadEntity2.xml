@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item [
+<!ENTITY square4 "&square3; &square3;">
+<!ENTITY square3 "&square2; &square2;">
+<!ENTITY square2 "&square1; &square1;">
+<!ENTITY square1 "grain">
+]>
+<item>&square4;</item>
+<!--<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE item [
+  <!ENTITY square36 "&square35; &square35;">
+  <!ENTITY square35 "&square34; &square34;">
+  <!ENTITY square34 "&square33; &square33;">
+  <!ENTITY square33 "&square32; &square32;">
+  <!ENTITY square32 "&square31; &square31;">
+  <!ENTITY square31 "&square30; &square30;">
+  <!ENTITY square30 "&square29; &square29;">
+  <!ENTITY square29 "&square28; &square28;">
+  <!ENTITY square28 "&square27; &square27;">
+  <!ENTITY square27 "&square26; &square26;">
+  <!ENTITY square26 "&square25; &square25;">
+  <!ENTITY square25 "&square24; &square24;">
+  <!ENTITY square24 "&square23; &square23;">
+  <!ENTITY square23 "&square22; &square22;">
+  <!ENTITY square22 "&square21; &square21;">
+  <!ENTITY square21 "&square20; &square20;">
+  <!ENTITY square20 "&square19; &square19;">
+  <!ENTITY square19 "&square18; &square18;">
+  <!ENTITY square18 "&square17; &square17;">
+  <!ENTITY square17 "&square16; &square16;">
+  <!ENTITY square16 "&square15; &square15;">
+  <!ENTITY square15 "&square14; &square14;">
+  <!ENTITY square14 "&square13; &square13;">
+  <!ENTITY square13 "&square12; &square12;">
+  <!ENTITY square12 "&square11; &square11;">
+  <!ENTITY square11 "&square10; &square10;">
+  <!ENTITY square10 "&square9; &square9;">
+  <!ENTITY square9 "&square8; &square8;">
+  <!ENTITY square8 "&square7; &square7;">
+  <!ENTITY square7 "&square6; &square6;">
+  <!ENTITY square6 "&square5; &square5;">
+  <!ENTITY square5 "&square4; &square4;">
+  <!ENTITY square4 "&square3; &square3;">
+  <!ENTITY square3 "&square2; &square2;">
+  <!ENTITY square2 "&square1; &square1;">
+  <!ENTITY square1 "grain">
+]>
+<item>&square36;</item>-->
+
+
+    
+    
+
+

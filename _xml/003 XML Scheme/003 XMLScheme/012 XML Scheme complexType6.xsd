@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="person" type="FullAddressType" />
+    <xs:complexType name="AddressType">
+      <xs:sequence maxOccurs="unbounded">
+        <xs:element name="city" type="xs:string" />
+        <xs:element name="phone" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="FullAddressType">
+      <xs:complexContent>
+        <xs:extension base="AddressType">
+          <xs:sequence>
+            <xs:element name="street" type="xs:string" />
+          </xs:sequence>
+        </xs:extension>  
+      </xs:complexContent>
+    </xs:complexType>
+  
+</xs:schema>

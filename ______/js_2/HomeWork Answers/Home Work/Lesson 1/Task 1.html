@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <script>
+
+        // Функция-конструктор
+        function MyObject(name){
+            // Свойство экземпляра
+            this.name = name;
+        }
+
+        // Свойство на функции-конструкторе (статическое свойство)
+        MyObject.staticProperty = "Some Property";
+
+        // Метод на экземпляре
+        MyObject.prototype.someMethod = function (){
+            document.write("Object name " + this.name + "<br/>");
+        }
+
+        // Метод на функции конструкторе (статический метод)
+        MyObject.staticMethod = function() {
+            document.write("Static Method and Static Property: "+ MyObject.staticProperty + "<br/>");
+        }
+
+        // Экземпляр объекта
+        var example = new MyObject("NewExample");
+
+        // Вызов функции на объекте
+        example.someMethod();
+
+        // Вызов функции на конструкторе
+        MyObject.staticMethod();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE notebook SYSTEM "notebook.dtd">
+<notebook>
+  <person>
+    <fullname/>
+    <phone>22-22-22</phone>
+    <city>Zmerinka</city>
+  </person>
+  <person>
+    <fullname />
+    <phone>333-33-33</phone>
+    <city>Киев</city>
+    <text>Тексты</text>
+  </person>
+</notebook>

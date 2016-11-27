@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id=""fuck> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem expedita fu20</p>
+
+<ul id="ul">
+    <li>ss</li>
+    <li>ss</li>
+    <li>ss</li>
+</ul>
+
+
+<script>
+    var x = document.getElementsByTagName('p');
+
+    x[0].setAttribute('align', 'right');
+    x[0].innerHTML = 'hui';
+
+    var ul = document.getElementById('ul');
+    var new_li = document.createElement('li');
+
+    new_li.innerHTML = 'uiok';
+    new_li.createTextNode('testnode');
+
+   var li_text = document.createTextNode('testnode');
+    new_li.appendChild(li_text);
+
+    //.insertBefore(newElement, beforeElement);
+    //.insertAfter(newElement, afterElement);
+</script>
+</body>
+</html>

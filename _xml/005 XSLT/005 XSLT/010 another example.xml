@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="010 another example.xsl"?>
+
+<!-- выполнение преобразований в новый xml -->
+<lab5>
+	<element name="computer" value="1" />
+	<element name="printer" value="1" />
+	<element name="monitor" value="1" />
+	<element name="mouse" value="1" />
+</lab5>

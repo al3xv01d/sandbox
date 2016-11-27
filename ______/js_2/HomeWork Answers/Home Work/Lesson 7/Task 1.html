@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task 1</title>
+    <meta charset="utf-8"/>
+    <style type="text/css" >
+        form {
+            margin:auto
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        window.addEventListener("load", function () {
+            // Проверка на введенные пользователем данные, используя пользовательские атрибуты
+            for (el in document.pizza.elements) {
+                var currentEl = document.pizza.elements[el];
+                if (currentEl.type === "text" || currentEl.type === "tel") {
+                    currentEl.addEventListener("change", function (e) {
+                        if (e.target.pattern)
+                            if (new RegExp(e.target.pattern).test(e.target.value))
+                                e.target.style.border = "3px solid green"
+                            else
+                                e.target.style.border = "3px solid red"
+                    });
+                }
+            }
+            var price = 0, div = document.getElementById('total');
+            // Вывод данных по цене пиццы
+            for (el in document.pizza.elements) {
+                var currentEl = document.pizza.elements[el];
+                if (currentEl.name === "size" || currentEl.name === "ingr") {
+                    currentEl.addEventListener("change", function (e) {
+                        if (e.target.value === "small"){
+                            price = 25;
+                        }
+                        else if (e.target.value === "normal"){
+                            price = 50;
+                        }
+                        else if (e.target.value === "big"){
+                            price = 75;
+                        }
+                        else if (e.target.value === "mashrooms"){
+                            if(e.target.checked ==false){
+                                price -= 5;
+                            }
+                            else{
+                                price += 5;
+                            }
+                        }
+                        else if (e.target.value === "bekon"){
+                            if(e.target.checked ==false){
+                                price -= 10;
+                            }
+                            else{
+                                price += 10;
+                            }
+                        }
+                        else if (e.target.value === "tomato"){
+                            if(e.target.checked ==false){
+                                price -= 10;
+                            }
+                            else{
+                                price += 10;
+                            }
+                        }
+                        else if (e.target.value === "cheese"){
+                            if(e.target.checked ==false){
+                                price -= 15;
+                            }
+                            else{
+                                price += 15;
+                            }
+                        }
+                        else if (e.target.value === "olive"){
+                            if(e.target.checked ==false){
+                                price -= 5;
+                            }
+                            else{
+                                price += 5;
+                            }
+                        }
+                        div.innerHTML = 'Total Price: '+ price+' uah';
+                    });
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+<form name="pizza">
+    <input type="radio" name="size" value="small"/>
+    <img src="http://www.pizzaua.com/wp-content/images/30.png"/>
+    <input type="radio" name="size" value="normal" />
+    <img src="http://www.pizzaua.com/wp-content/images/40.png"/>
+    <input type="radio" name="size" value="big"/>
+    <img src="http://www.pizzaua.com/wp-content/images/50.png" />
+
+    <br>
+    <input type="checkbox"  name="ingr" value="mashrooms" /> Грибы
+    <input type="checkbox"  name="ingr" value="bekon" /> Бекон
+    <input type="checkbox"  name="ingr" value="tomato"/> Помидоры
+    <input type="checkbox"  name="ingr" value="cheese"/> Сыр
+    <input type="checkbox"  name="ingr" value="olive"/> Оливки
+
+    <br>
+
+    <input type="text" class="input" name="name" placeholder="Name" required title="Name" pattern="[A-Za-zА-Яа-яЁё]+"/>
+    <input type="tel"  class="input" name="tel"  placeholder="telephone" required title="contact telephone +38(095)123-45-67" pattern="\+38\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}"/>
+    <input type="text" class="input" name="address" placeholder="address" required title="Order address" pattern="[A-Za-zА-Яа-яЁё0-9,.\-\s]+"/>
+
+    <br />
+    <div id="total"></div>
+    <input type="submit" />
+</form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
+  <xs:element name="person">
+    <xs:complexType>
+      <xs:all>
+        <!-- <xs:all> | <xs:choice> -->
+        <xs:element name="address" type="xs:string" />
+        <xs:element name="phone" type="xs:int" />
+      </xs:all>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

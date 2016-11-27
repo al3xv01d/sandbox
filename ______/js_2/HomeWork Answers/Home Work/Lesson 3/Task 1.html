@@ -1,0 +1,62 @@
+<head>
+    <title>Task 1</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        var ms = 0, sec = 0, min = 0;
+        // На событие onload, создаем анонимную функцию
+        window.onload = function () {
+
+            // Функция которая будет вести подсчет времени и вносить данные в параграф с id = timer
+            function count() {
+                if (ms == 0 && sec ==0&&min==0) {
+                    get("timer").innerHTML = "00:00:00";
+                }
+                else if (ms < 10 && sec < 10) {
+                    get("timer").innerHTML = "0" + min.toString() + ":0" + sec.toString() + ":0" + ms.toString();
+                }
+                else if (sec > 10 && ms < 10) {
+                    get("timer").innerHTML = "0" + min.toString() + ":" + sec.toString() + ":0" + ms.toString();
+                }
+                else if (sec<10) {
+                    get("timer").innerHTML = "0" + min.toString() + ":0" + sec.toString() + ":" + ms.toString();
+                }
+                else if (min < 10) {
+                    get("timer").innerHTML = "0" + min.toString() + ":" + sec.toString() + ":" + ms.toString();
+                }
+                ms++;
+                if (ms>99) {
+                    ms = 0;
+                    sec++;
+                    if (sec>59) {
+                        sec = 0;
+                        min++;
+                    }
+                }
+            }
+            get("startButton").onclick = function () {
+                intervalHandler = setInterval(count, 0);
+            }
+
+            get("stopButton").onclick = function () {
+                clearInterval(intervalHandler);
+            }
+            get("resetButton").onclick = function () {
+                ms = 0;
+                sec = 0;
+                min = 0;
+                get("timer").innerHTML = "00:00:00";
+            }
+        }
+        // Функция для быстрого получения доступа к элементам через функцию getElementById
+        var get = function (id) {
+            return document.getElementById(id);
+        }
+    </script>
+</head>
+<body>
+    <p id="timer">00:00:00</p>
+    <input id="startButton" type="button" value="Start" />
+    <input id="stopButton" type="button" value="Stop" />
+    <input id="resetButton" type="button" value="Reset" />
+</body>
+</html>

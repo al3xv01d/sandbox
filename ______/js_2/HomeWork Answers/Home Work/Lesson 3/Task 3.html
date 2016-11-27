@@ -1,0 +1,43 @@
+<head>
+    <title>Task 3</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+
+        window.onload = function(){
+            // Событие onblur возникает при выходе из элемента input
+            document.getElementById("input").onblur = function () {
+                // Получаем введенное пользователем значение
+                var str = document.getElementById("input").value;
+                // Получаем арифметический знак
+                var operation = str.match(/[+*/-]/g)[0];
+                // Получаем массив переданных элементов
+                var numberArray = str.split(/\W+/g);
+
+                document.getElementById("output").innerHTML = switCase(numberArray, operation);
+            }
+            function switCase(arr, oper){
+                // Полученные строковые элементы из input переводим в целочисленные с помощью
+                // функции parseFloat()
+                var a = parseFloat(arr[0]),b = parseFloat(arr[1]);
+                // Проверка на 0
+                if(a == 0 || b == 0 && oper == "/"){
+                    return "На ноль делить нельзя!";
+                }
+                else{
+                    // С помощью switch-case определяем арифметическую функцию и возвращаем результат
+                    switch (oper){
+                        case "+": return a+b; break;
+                        case "-": return a-b;break;
+                        case "/": return a/b;break;
+                        case "*": return a*b;break;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="input">
+    <p id="output"></p>
+</body>
+</html>

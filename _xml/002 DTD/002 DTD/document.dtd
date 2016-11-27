@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT document (#PCDATA)>
+<!-- с помощью атрибута type будет указано формат данных, которые будет содержать каждый документ-->
+<!ATTLIST document  type NOTATION (txt|html) #REQUIRED>
+
+<!NOTATION txt   SYSTEM "notepad.exe">
+<!-- для текстовых документов - блокнот-->
+<!NOTATION html  SYSTEM "iexplore.exe">
+<!-- для Web-сторінок–Internet Explorer-->

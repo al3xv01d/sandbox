@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<book>
+  <title>Заголовок</title>
+  <desc>Описание</desc>
+  <!--<details>PCDATA & parcelable character data</details>-->
+  <details><![CDATA[PCDATA & parcelable character]]></details>
+</book>

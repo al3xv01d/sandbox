@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="person">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="street" type="xs:string"/>
+      <xs:element name="city" type="xs:string" minOccurs="0"/>
+      <xs:element name="state" type="xs:Name" minOccurs="0"/>
+      <xs:element name="author">
+        <xs:complexType>
+          <xs:choice maxOccurs="unbounded">
+            <xs:element name="book" type="xs:string"/>
+            <xs:element name="article" type="xs:string"/>
+            <xs:element name="whitepaper" type="xs:string"/>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+
+  </xs:complexType>
+
+  </xs:element>
+
+</xs:schema>

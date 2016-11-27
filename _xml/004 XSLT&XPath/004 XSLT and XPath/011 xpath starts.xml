@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="011 xpath starts.xslt"?>
+<table>
+  <row1 a="1" b="1">Значение</row1>
+  <row2 a="2" b="2">Значение1</row2>
+  <row3 a="3" b="3">Значение2</row3>
+  <row4 a="4" b="4">Значение3</row4>
+  <row5 a="5" b="5">Значение4</row5>
+  <row6 a="6" b="6">Значение5</row6>
+  <info>инфо</info>
+</table>

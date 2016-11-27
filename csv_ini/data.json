@@ -1,0 +1,11 @@
+{
+  "name" : "Alex",
+  "age" : 22,
+  "adress" : {
+    "city" : "Moscow",
+    "index" : 24214
+  }
+
+
+
+}

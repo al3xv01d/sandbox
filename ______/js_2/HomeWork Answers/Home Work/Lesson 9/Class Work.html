@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Class Work</title>
+</head>
+<script>
+    window.onload = function () {
+        // Массив фотографии со страницы, ссылочная переменная на div и пустая переменная для вывода
+        var imgs = document.images;
+        var div = document.getElementsByTagName('div')[0];
+        var str = '';
+        for (var i = 0; i < imgs.length; i++) {
+            str += 'Ссылка картинки ' + (i + 1) + ': ' + imgs[i].src + '<br/>';
+            timeout(imgs[i], i);
+        }
+        function timeout(obj, i) {
+            setTimeout(function () {
+                obj.style.border = 'solid 1px red';
+            }, (i + 1) * 1000)
+        }
+        div.innerHTML = str;
+    }
+</script>
+<style>
+    img {
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+<img src="img/html.jpg" alt="HTML5"/>
+<img src="img/css.jpg" alt="CSS3"/>
+<img src="img/js.png" alt="JavaScript"/>
+
+<div></div>
+</body>
+</html>

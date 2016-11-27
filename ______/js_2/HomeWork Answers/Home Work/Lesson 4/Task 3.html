@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <style>
+    </style>
+    <script type="text/javascript">
+        window.onload=function(){
+            // Функция изменения параметров top и left
+            function position(){
+                // Получаем размеры документа
+                var x = window.innerWidth, y = window.innerHeight;
+                // Массив элементов div
+                var div = document.getElementsByTagName('div');
+                for(var i = 0; i<div.length; i++){
+                    // x-100 или y-50 указывает на то чтобы div'ы не выходили за область документа :)
+                    div[i].style.left = getRandom(1,x-200)+"px";
+                    div[i].style.top = getRandom(1,y-200)+"px";
+                    // Для красоты пример дополнен изменением цвета заливки через HSL
+                    div[i].style.backgroundColor = "hsl("+getRandom(0,360)+",75%,50%)";
+                }
+            }
+            // Запуск интервала
+            setInterval(position,1000);
+        }
+        // Функция getRandom() возвращает произвольное значение из опреденного диапазона
+        function getRandom(min, max)
+        {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+    <style>
+        div{
+            background-color: aqua;
+            width:50px;
+            height: 50px;
+            padding: 5px;
+            margin: 5px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="first"></div>
+<div id="second"></div>
+<div id="third"></div>
+</body>
+</html>

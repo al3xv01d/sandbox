@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!ENTITY % contentType "CDATA">
+<!ELEMENT style ANY>
+<!ELEMENT text ANY>
+<!ATTLIST style 
+     id ID #IMPLIED 
+     type %contentType; #REQUIRED 
+          title %contentType; #REQUIRED > 
+<!-- аналог <!ATTLIST style  id ID #IMPLIED  type CDATA #REQUIRED  title CDATA #REQUIRED > --> 

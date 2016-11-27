@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 3</title>
+    <script>
+        window.onload = function (){
+            var btn = document.getElementById('btn');
+            // При наведении мышью на кнопку будет срабатывать событие mousemove
+            btn.addEventListener('mousemove',runFromMouse)
+            // Обработчик события
+            function runFromMouse(e){
+                var x = e.clientX, y = e.clientY;
+                btn.style.position = 'absolute';
+                btn.style.left = x+15+'px';
+                btn.style.top = y+15+'px';
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="btn" type="button" value="Получить скидку"/>
+</body>
+</html>

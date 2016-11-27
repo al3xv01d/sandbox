@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE geo:map [
+	<!ENTITY copyright "Copyright me 2012">
+]>
+<geo:map xmlns:geo="urn:geometry" cpr="&copyright;">
+	<geo:location name="house" lat="30"/>
+</geo:map>

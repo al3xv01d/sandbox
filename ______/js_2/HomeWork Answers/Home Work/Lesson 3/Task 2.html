@@ -1,0 +1,42 @@
+<head>
+    <title>Task 2</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        // Для теста примера перейдите по URL текущей страницы + ?first=123&second=321
+        window.onload = function print() {
+
+                var args = getElements();
+                var count = 0;
+                var e = document.getElementById("output");
+
+                for(var i = 0; i < args.length; i++){
+                    count+=args[i];
+                }
+
+                e.innerHTML = "Переданное значение " + count;
+            }
+        function getElements() {
+            // Пустой массив
+            var e = [];
+            var elements = location.search.substring(1);
+            var arr = elements.split("&");
+
+            for (var i = 0; i < arr.length; i++) {
+                var pos = arr[i].indexOf('=');
+                if (pos == -1) {
+                    continue;
+                }
+                var value = arr[i].substring(pos + 1);
+
+                e[i] = parseFloat(value);
+
+            }
+
+            return e;
+        }
+    </script>
+</head>
+<body>
+    <p id="output"></p>
+</body>
+</html>

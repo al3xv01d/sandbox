@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task 1</title>
+    <script>
+
+        window.addEventListener("load", function () {
+            var a = document.getElementById('a'),b = document.getElementById('b');
+            var pattern = /\d/;
+            // Проверка введенных данных пользователем
+            a.addEventListener('keypress', function (e) {
+                var str = String.fromCharCode(e.charCode);
+                if(!pattern.test(str)){
+                    e.preventDefault();
+                }
+            })
+            b.addEventListener('keypress', function (e) {
+                var str = String.fromCharCode(e.charCode);
+                if(!pattern.test(str)){
+                    e.preventDefault();
+                }
+            })
+
+            var xhr = new XMLHttpRequest();
+
+            document.getElementById("post").addEventListener("click", function () {
+                var valueA = parseFloat(a.value),valueB = parseFloat(b.value);
+                xhr.open("POST", "CalcHandler.ashx");
+
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        document.getElementById("output").innerHTML = "POST " + xhr.responseText;
+                    }
+                }
+
+                xhr.send("a="+valueA+"&b="+valueB);
+            })
+
+        })
+    </script>
+</head>
+<body>
+<p id="output"></p>
+a<input id="a" type="text"/>b<input id="b" type="text"/>
+<button id="post">post</button>
+</body>
+
+</html>

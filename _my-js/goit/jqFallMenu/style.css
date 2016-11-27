@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    padding: 50px;
+    background: #eee;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    font-size: 20px;
+    color: #000;
+}
+
+.submenu {
+    margin: 10px;
+    display: none;
+}

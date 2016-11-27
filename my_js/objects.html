@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<script>
+
+person = {
+    name: 'vasya',
+};
+
+person.gender = 'male';
+
+    if( "name" in person) { // property name as string
+        alert('In wordk');
+    }
+
+    person['age'] = 18;
+
+  // alert(person);
+    alert(person['name']);
+
+
+    //
+person = {
+    name: 'vasya',
+    obj: {
+        property: 'ddd',
+    }
+};
+
+    person.obj.property = '444';
+delete person.name;
+</script>
+
+</body>
+</html>

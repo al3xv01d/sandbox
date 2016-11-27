@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="014 XML Scheme complexType8.xsd">
+  <person>
+    <firstname>Имя</firstname>
+    <lastname>Фамилия</lastname>
+    <country>Покупатель</country>
+  </person>
+  <norwayperson>
+    <firstname>Имя</firstname>
+    <lastname>Фамилия</lastname>
+    <country>Norway</country>
+  </norwayperson>
+</base>
+<!--Для создания элемента, который содержит простой текст в теле компонента complexType вводится компонент simpleContent, в котором
+указывается или компонент restriction, или extension. В атрибуте base последних задается простой тип, который описывает тип тела элемента.--> 
+

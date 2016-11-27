@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone = "yes"?>
+<!--xmlns - единственный не пользовательский атрибут в XML-->
+<!-- Пространство имен -->
+<x xmlns:n1="http://www.w3.org"
+   xmlns="http://www.w3.org" >
+  <good a="1"     b="2" />
+  <good a="1"     n1:style="color:red">Привет</good>
+</x>
+
+<!--
+<x xmlns:n1="http://www.w3.org/1999/xhtml"
+   xmlns="http://www.w3.org" >
+  <good a="1"     b="2" />
+  <good a="1"     n1:style="color:red">Привет</good>
+</x>
+Язык XML 1.0 не имеет встроенного механизма декларирования "глобальных" атрибутов.
+Такие конструкции, как атрибут style в HTML, становятся глобальными только при их тщательном описании и 
+соответствующей интерпретации со стороны HTML приложений(DTD).
+-->

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="013 XML Scheme complexType7.xsd">
+  <book id="10">
+    <author>Автор</author>
+    <title>Заголовок</title>
+    <year>2009</year>
+    <author>Можно еще одного автора</author>
+    <title>но только с заголовком</title>
+  </book>
+  <bookrestrict id="100">
+    <author>Автор</author>
+    <title>Заголовок</title>
+    <!--<year>год</year>-->
+  </bookrestrict>
+</root>
+
+<!--Помимо расширения комплексных типов, их можно сужать. Для этого в компоненте complexContent указывается
+компонент restriction. В его содержании указывается перечень элементов, которые останутся после сужения. Например, существует тип
+bookType, который описывает характеристики книги и необходимо создать сложный тип, который будет содержать аналогичную
+информацию, но без указания информации о годе издания.-->

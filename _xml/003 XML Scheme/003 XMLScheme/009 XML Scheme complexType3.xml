@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="009 XML Scheme complexType3.xsd">
+  <address>Адрес</address>
+  <phone-list>
+    50005
+    505050
+    505050
+    05050
+  </phone-list>
+</person>

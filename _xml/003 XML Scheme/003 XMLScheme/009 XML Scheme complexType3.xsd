@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="person">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="address" type="xs:string" />
+        <xs:choice>
+          <xs:element name="phone" type="xs:string" />
+          <xs:element name="phone-list">
+            <xs:simpleType>
+              <xs:list itemType="xs:string" />
+            </xs:simpleType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+<!--Компонент choice можно вкладывать в компонент sequence или наоборот. Причем, мы можем
+указать для любого компонента модели группы атрибут maxOccurs = "unbounded", что позволит повторять группу
+произвольное количество раз. Но модель группы all отличается в данном плане от моделей sequence и choice. В ней НЕ допускается использование
+компонентов sequence и choice. Аналогично, в компонентах sequence и choice нельзя использовать компонент all.-->

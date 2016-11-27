@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="codeType">
+    <xs:restriction base="xs:string">
+      <xs:length value="7" />
+      <!-- ограничуем возможную длину строки: 7 символов -->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="code" type="codeType" />
+</xs:schema>

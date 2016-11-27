@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="011 example.xsl"?>
+<!-- вывести списком, кадый нечетный - выделить серым фоном -->
+<lab52>
+	<element name="computer" value="1" />
+	<element name="printer" value="2" />
+	<element name="monitor" value="3" />
+	<element name="mouse" value="4" />
+	<element name="mouse2" value="5" />
+	<element name="mouse3" value="6" />
+</lab52>

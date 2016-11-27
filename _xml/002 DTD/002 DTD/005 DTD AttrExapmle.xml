@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css"?>
+
+<notebook>
+  <person>
+    <fullname first="Ivan" surname="Ivanov"/>
+    <phone></phone>
+    <text></text>
+    <city type="город">Киев</city>
+  </person>
+</notebook>

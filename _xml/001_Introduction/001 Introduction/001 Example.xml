@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" standalone = "yes"?>
+<!--Пример разметки-->
+<notebook>
+  <person sex="man">
+    <name>Ivan</name>
+    <surname>Ivanov</surname>
+    <phone>22-22-22</phone>
+  </person>
+
+  <person sex='wooman'>
+    <name>Petr</name>
+    <surname>Petrov</surname>
+    <phone>33-33-33</phone>
+  </person>
+</notebook>

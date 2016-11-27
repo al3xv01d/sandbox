@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT notebook3 (person)+>
+<!ELEMENT person ANY>
+<!ELEMENT fullname EMPTY>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT text ANY>
+
+<!ATTLIST fullname 
+          first   CDATA #REQUIRED 
+          middle  CDATA #IMPLIED  
+          surname CDATA #REQUIRED>
+<!ATTLIST city type (город | сгт | деревня) "деревня">
+
+
+

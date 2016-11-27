@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>   <!--Определяет сложный тип, задающий набор атрибутов и содержимое элемента. (внутри есть теги, а SimpleType - тегов нет)-->
+      <xs:sequence> <!--complexType обязательно должен содержать в себе композитор(sequence - набор)-->
+        <xs:element name="name"  type="xs:string" />
+        <xs:element name="myAge"  type="xs:integer" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

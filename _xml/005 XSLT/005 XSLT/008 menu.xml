@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="008 menu.xsl"?>
+<menu>
+	<menuItem title="Поисковики">
+		<menuItem title="Гугл" link="http://www.google.ru" />
+		<menuItem title="Яндекс" link="http://www.ya.ru" />
+		<menuItem title="Гого" link="http://www.gogo.ru" />
+	</menuItem>
+	
+	<menuItem title="Специалист">
+		<menuItem title="Microsoft">
+			<menuItem title="Курс 1" link="#" />
+			<menuItem title="LCS" link="#" />
+		</menuItem>
+		<menuItem title="Web">
+			<menuItem title="PHP" link="#" />
+			<menuItem title="SEO" link="#" />
+		</menuItem>
+	</menuItem>
+</menu>

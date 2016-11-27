@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="001 xslt.xslt"?>
+<group name="7HC15-5H" spec="Programming">
+  <student name ="Vasya Pupkin"> I am Vasya. I am the best programmer</student>
+  <student name ="Olya Pupkina"> I am Olga. I am the best designer</student>
+  <student name ="Innokentiy Pupkin"> I am Innokentiy. Simply Innokentiy</student>
+</group>

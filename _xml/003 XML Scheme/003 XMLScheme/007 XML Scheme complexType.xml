@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Определение комплексного типа можно разделить на 3 группы:
+определение типа пустого элемента, т.е. элемента, который имеет только атрибуты;
+определения типа элемента, который содержит вложенные элементы;
+определения типа элемента, который содержит только текст.
+Пример первой группы-->
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="007 XML Schema complexType.xsd">
+  <fullname firstname="Olga" lastname="Marinina" />
+</root>

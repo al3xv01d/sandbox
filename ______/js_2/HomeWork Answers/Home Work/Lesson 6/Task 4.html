@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <script>
+        // Обработчик события вешаем на объект window, чтобы отследить события окна браузера
+        window.addEventListener('keydown',function(e){
+            var div = document.getElementsByTagName('div')[0];
+            if(e.ctrlKey == true && e.shiftKey==false && e.keyCode == 83){
+                div.innerHTML='Сохранено';
+            }
+            else if(e.ctrlKey == true && e.keyCode == 65){
+                div.innerHTML='Выбрано все';
+            }
+            else if(e.ctrlKey == true && e.shiftKey==true && e.keyCode == 83){
+                div.innerHTML='Сохранено все';
+            }
+        })
+    </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="010 xpath more.xslt"?>
+<pricelist>
+  <book>
+    <title>Dinamic HTML</title>
+    <author>Алекс Хоумер</author>
+    <price>120</price>
+  </book>
+  
+  <book id="new">
+    <title>XML и IE5</title>
+    <author>Алекс Гомер</author>
+    <price>200</price>
+  </book>
+
+
+
+  <book id="old">
+    <title>Технология XSLT</title>
+    <author>Алексей Валиков</author>
+    <price>150</price>
+  </book>
+
+  <book id="soon">
+    <title>JavaScript</title>
+    <author>Дэвид Флэнаган</author>
+    <price>200</price>
+  </book>
+</pricelist>

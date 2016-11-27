@@ -1,0 +1,58 @@
+<head>
+    <title>Task 4</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        window.onload = function(){
+
+            // создаем 3 флага для 3 элементов
+            var flagFirst = false,flagSecond = false, flagThird = false;
+
+            // Создаем 3 ссылочные переменные к ссылкам
+            var first = document.getElementById("first"),
+                    second = document.getElementById("second"),
+                    third = document.getElementById("third");
+            // При нажатии на ссылку открываем окно с ссылкой и записываем полученные объект в переменную
+            first.onclick = function (){
+                var wind = window.open("./Task%204/JS_Lesson_1.html","Урок 1",
+                        "width=400,height=400");
+                first.innerHTML = "Урок 1 (открыт)";
+                // Изменяем флаг для повторного использования
+                flagFirst = !flagFirst;
+                // Если значение флага false, то окно будет закрыто и значение в ссылке изменится
+                if(!flagFirst){
+                    first.innerHTML = "Урок 1";
+                    wind.close();
+                }
+            }
+            second.onclick = function (){
+                var wind = window.open("./Task%204/JS_Lesson_2.html","Урок 2",
+                        "width=400,height=400");
+                second.innerHTML = "Урок 2 (открыт)";
+                flagSecond = !flagSecond;
+                if(!flagSecond){
+                    second.innerHTML = "Урок 2";
+                    wind.close();
+                }
+            }
+            third.onclick = function (){
+                var wind = window.open("./Task%204/JS_Lesson_3.html","Урок 3",
+                        "width=400,height=400");
+                third.innerHTML = "Урок 3 (открыт)";
+                flagThird = !flagThird;
+                if(!flagThird){
+                    third.innerHTML = "Урок 3";
+                    wind.close();
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li><a href="#">Главная страница</a></li>
+    <li><a id="first" href="#">Урок 1</a></li>
+    <li><a id="second" href="#">Урок 2</a></li>
+    <li><a id="third" href="#">Урок 3</a></li>
+</ul>
+</body>
+</html>

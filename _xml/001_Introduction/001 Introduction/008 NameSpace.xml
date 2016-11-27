@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Пространство имен -->
+<notebook xmlns="http://edu.cbsystematics.com/lesson/vova/">
+  <person sex="man">
+    <name>Ivan</name>
+    <surname>Ivanov</surname>
+    <phone xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">22-22-22</phone>
+    <!--Внутри одного пространства имен можно "привязывать" 
+    элементы к другим пространствам имен.-->
+  </person>
+  <person sex='wooman'>
+    <name>Petr</name>
+    <surname>Petrov</surname>
+    <phone>33-33-33</phone>
+  </person>
+</notebook>

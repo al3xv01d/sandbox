@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet href="style.css"?>
+<notebook>
+  <person sex="man">
+    <name>Ivan</name>
+    <surname>Ivanov</surname>
+    <phone>22-22-22</phone>
+  </person>
+
+  <person sex='wooman'>
+    <name>Petr</name>
+    <surname>Petrov</surname>
+    <phone>33-33-33</phone>
+  </person>
+</notebook>
+<!--Хотя в CSS и можно использовать в XML, но - это не достаточно удобно и недостаточно привлекательно выглядит.
+Кроме того, стили CSS определяют средства показа HTML-документа в окне браузера, то есть его визуализацию, а язык 
+XML отражает структуру документа, ничего не говоря о его внешнем виде. Поэтому для отображения и форматирования 
+XML-документов была разработана отдельная специальный язык XSL (XML Stylesheet Language),
+которая является реализацией XML. Изучению этого языка мы посвятим отдельную пару.-->

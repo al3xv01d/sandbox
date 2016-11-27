@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 4</title>
+    <style>
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            // Подключаемся к 4 кнопкам и div
+            var top = document.getElementById('top'), right=document.getElementById('right'),
+                    bottom = document.getElementById('bottom'),left=document.getElementById('left'),
+                    div = document.getElementById('div');
+            // Два счетчика по осям X и Y
+            var positionY = 0,positionX= 0;
+            // Неопределённая перменная для будущего объекта анимации
+            var timer;
+            // На нажатие кнопки вешаем обработчики
+            top.onclick=function () {
+                timer = setInterval(function () {
+                    // Увеличиваем значение по оси y
+                    div.style.top= positionY+"px";
+                    positionY--;
+                    // Проверка дошли ли мы до границы
+                    if(div.style.top=="-100px"){
+                        clearInterval(timer);
+                    }
+                },10)
+            }
+            right.onclick=function () {
+                timer = setInterval(function () {
+                    div.style.left = positionX+"px";
+                    positionX--;
+                    if(div.style.left=="-100px"){
+                        clearInterval(timer);
+                    }
+                },10)
+            }
+            bottom.onclick=function () {
+                timer = setInterval(function () {
+                    div.style.top = positionY+"px";
+                    positionY++;
+                    if(div.style.top=="0px"){
+                        clearInterval(timer);
+                    }
+                },10)
+            }
+            left.onclick=function () {
+                timer = setInterval(function () {
+                    div.style.left = positionX+"px";
+                    positionX++;
+                    if(div.style.left=="0px"){
+                        clearInterval(timer);
+                    }
+                },10)
+            }
+        }
+    </script>
+    <style>
+        div {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            padding: 10px 5px;
+            position: absolute;
+            text-align: center;
+            color:wheat;
+            margin: 200px;
+        }
+        input {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+<input id="top"
+       value="Вверх"
+       type="button"/>
+<input id="right"
+       value="Направо"
+       type="button"/>
+<input id="bottom"
+       value="Вниз"
+       type="button"/>
+<input id="left"
+       value="Влево"
+       type="button"/>
+<div id="div">Великолепный DIV!</div>
+</body>
+</html>

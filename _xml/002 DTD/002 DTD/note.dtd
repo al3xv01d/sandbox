@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!ELEMENT note ANY>
+<!ELEMENT name ANY>
+<!ELEMENT street ANY>
+<!ELEMENT city ANY>
+<!ELEMENT state ANY>
+<!ELEMENT zipcode ANY>
+<!ENTITY % customer "name, street, city, state, zipcode">
+<!ELEMENT invoice (%customer;, item, price, date)>
+<!ELEMENT item ANY>
+<!ELEMENT price ANY>
+<!ELEMENT date ANY>

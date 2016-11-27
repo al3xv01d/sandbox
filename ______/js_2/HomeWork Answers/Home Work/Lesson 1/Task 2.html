@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <script>
+
+        // Функция-конструктор Human
+        function Human(name, age){
+            this.Name = name;
+            this.Age = age;
+        }
+
+        // Переопределние метода toString()
+        Human.prototype.toString = function (){
+            return "[Name: "+this.Name +"; Age: "+this.Age + "] ";
+        }
+
+        // Массив объектов Human
+        var humans = [new Human("Andrew",42),new Human("Alex",36),
+            new Human("Elena",25),new Human("Anastasia",29),new Human("Michael",22)];
+
+        // Вывод значений массива
+        document.write(humans + "<br/>");
+
+        // Функция sort([compareFunction]) вызывается на массиве и принимает параметр в виде функции compareTo()
+        humans.sort(function (n,m){
+            var f = n.Age;
+            var s = m.Age;
+            if(f<s){
+                return -1;
+            }
+            else if(f>s){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        });
+
+        document.write(humans);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

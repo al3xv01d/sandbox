@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT notebook (person)+>
+<!ELEMENT person ANY>
+<!ELEMENT fullname EMPTY>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT text (#PCDATA)>

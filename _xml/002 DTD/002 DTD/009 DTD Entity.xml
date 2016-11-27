@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+  <invoice>
+    <name>
+      text
+    </name>
+    <street>
+      text
+    </street>
+    <city>
+      text
+    </city>
+    <state>
+      text
+    </state>
+    <zipcode>
+      text
+    </zipcode>
+    <item>
+      text
+    </item>
+    <price>
+      text
+    </price>
+    <date>
+      text
+    </date>
+  </invoice>
+</note>

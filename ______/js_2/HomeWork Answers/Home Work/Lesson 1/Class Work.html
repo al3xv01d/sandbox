@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Class Work</title>
+    <script type="text/javascript">
+
+        // Функция конструктор (Класс или объект) Box
+        function Box(height, width, depth, material){
+            this.Height=height;
+            this.Wight=width;
+            this.Depth=depth;
+            this.Material=material;
+            this.Volume=height*width*depth;
+            // Метод equals() - сравнивает свойства material двух объектов
+            this.equals = function (obj) {
+                if (this.Material == obj.Material) {
+                    return true;
+                }
+                else { return false; }
+            }
+            // toString() - переопределенный вывод данных
+                this.toString = function () {
+                    return "Высота:" + this.Height + "Длина:" + this.Width + "Глубина:"
+                        + this.Depth + "Материал:" + this.Material + "Объем коробки:"
+                        + this.Volume + "<hr/>";
+                }
+        }
+        // Экземпляры объекта Box
+        var b1 = new Box(123, 134, 634, "leather");
+        var b2 = new Box(342, 234, 433, "chrome");
+
+        document.write(b1.toString());
+        document.write(b2.toString());
+
+        var eq = (b1.equals(b2)) ? "The material is equal." : "The material is not equal.";
+        document.write(eq);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

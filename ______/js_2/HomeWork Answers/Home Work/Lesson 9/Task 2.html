@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <script>
+        // Создание анимации
+        var countStart = 30;
+        var countEnd = 400;
+        var timer;
+        window.onload = function (e) {
+            e.target.addEventListener('click', function (e) {
+                if (countStart > countEnd) {
+                    timer = setInterval(function () {
+                        countStart = 30;
+                        e.target.style.height = countEnd + 'px';
+                        countEnd--;
+                        if (e.target.style.height === '30px') {
+                            clearInterval(timer);
+                            countEnd = 400;
+                        }
+                    }, 1)
+                }
+                else {
+                    timer = setInterval(function () {
+                        e.target.style.height = countStart + 'px';
+                        countStart++;
+                        if (e.target.style.height === '400px') {
+                            clearInterval(timer);
+                        }
+                    }, 1)
+                }
+            })
+        }
+        function animate(target) {
+
+        }
+    </script>
+    <style>
+        img {
+            height: 30px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="img/html.jpg" alt="HTML5"/>
+    <img src="img/css.jpg" alt="CSS3"/>
+    <img src="img/js.png" alt="JavaScript"/>
+</div>
+</body>
+</html>

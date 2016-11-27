@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XMLSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="Year">
+    <xs:restriction base="xs:gYear">
+      <xs:minInclusive value="1700"/>
+      <!-- минимальное введенное значение года - 1700 -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DateType">
+    <xs:restriction base="xs:date">
+      <xs:minInclusive value="2013-01-01"/>
+      <!-- минимальная дата -->
+      <xs:maxInclusive value="2013-12-31"/>
+      <!-- максимальная дата -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="TypeId">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="10000" />
+      <!-- минимальное значение >= 10 000 -->
+      <xs:pattern value="[1-7][0-7]{4}" />
+      <!-- шаблон на введение -->
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="genderType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="male|female"/>
+      <!--шаблон на введение одного из двух значений-->
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name ="date2" type="xs:date"></xs:element>
+  <xs:element name="date" type="DateType"></xs:element>
+  <xs:element name="year" type="Year"></xs:element>
+  <xs:element name="gender" type="genderType"></xs:element>
+  <xs:element name="id" type="TypeId"></xs:element>
+</xs:schema>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE items [
+  <!ENTITY item-start "<item>">
+  <!ENTITY content "some text">
+  <!ENTITY item-end "</item>">
+]>
+<items>
+  <![CDATA[&item-start;%content;%item-end;]]>
+</items>
+
+
+<!--
+Правильный вариант
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE items [
+  <!ENTITY drill "<item>drill</item>">
+]>
+<items>
+  &drill;
+</items>-->

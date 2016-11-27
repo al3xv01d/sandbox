@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      sex="male" xsi:noNamespaceSchemaLocation="017 XML Scheme ref2.xsd">
+  <name>Имя</name>
+  <person>
+    <name>Имя</name>
+    <address>Адресс</address>
+    <person>
+      <name>Имя</name>
+      <address>Адресс</address>
+    </person>
+  </person>
+</root>
+
+<!--Кроме того, мы имеем возможность ссылаться на свой ​​
+собственный элемент и делать его вложенным, но тогда обязательно
+задания параметра minOccurs равным 0, что указывает на то, что данный 
+элемент может отсутствовать.-->

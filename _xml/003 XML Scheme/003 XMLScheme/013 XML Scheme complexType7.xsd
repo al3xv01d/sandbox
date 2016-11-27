@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root" />
+    <xs:element name="book" type="bookType" />
+    <xs:element name="bookrestrict" type="bookExtensionType" />
+  <xs:complexType name="bookType">
+    <xs:sequence maxOccurs="unbounded">
+      <xs:element name="author" type="xs:normalizedString" minOccurs="0"  maxOccurs="unbounded" />
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="year" type="xs:int" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+
+    <xs:attribute name="id" type="xs:integer" use="optional" />
+  </xs:complexType>
+
+  <!-- restriction тип -->
+  <xs:complexType name="bookExtensionType">
+    <xs:complexContent>
+      <xs:restriction base="bookType">
+        <xs:sequence>
+          <xs:element name="author" type="xs:normalizedString" minOccurs="0" maxOccurs="unbounded" />
+          <xs:element name="title" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:integer" use="optional" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
+

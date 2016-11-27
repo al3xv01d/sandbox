@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"  ?>
+<!DOCTYPE notebook3 SYSTEM "notebook3.dtd" [
+  <!ENTITY author "V.Pupkin Incorporation">
+  <!ENTITY copyright "Copyright &author;">
+  <!ENTITY adv "&copyright; &author;">
+] 
+>
+<notebook3>
+  <person>
+    <fullname first="Vasja" surname="Pupkin"/>
+    <phone>22-22-22</phone>
+    <city type="сгт">Zmerinka</city>
+  </person>
+  <person>
+    <fullname first="Dasha" surname="Ivanova"/>
+    <phone>333-33-33</phone>
+    <city>Киев</city>
+    <text>&lt;</text>
+    <text>&copyright; Текст</text>
+    <text>5 &lt; 2</text>
+    <text>Рекламное обьявление: &adv;</text>
+  </person>
+</notebook3>

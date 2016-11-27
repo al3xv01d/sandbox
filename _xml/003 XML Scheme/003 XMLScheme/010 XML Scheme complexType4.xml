@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<person firstname="Михаил" lastname="Михайлов" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:noNamespaceSchemaLocation="010 XML Scheme complexType4.xsd">
+  <address>
+    ул. Иванова 15 кв. 15
+  </address>
+  <phone>5500541</phone>
+</person>

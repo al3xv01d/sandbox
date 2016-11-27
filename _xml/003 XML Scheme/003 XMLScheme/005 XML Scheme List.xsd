@@ -1,0 +1,8 @@
+﻿<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="intvalues" type="valuelist"></xs:element>
+    <xs:simpleType name="valuelist">
+      <xs:list itemType="xs:integer"/>
+    </xs:simpleType>
+  <xs:element name="root"></xs:element>
+  </xs:schema>

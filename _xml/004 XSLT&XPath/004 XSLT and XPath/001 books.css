@@ -1,0 +1,5 @@
+* {display: block;}
+book {border-bottom: 1px dotted gray;}
+title, author, price {display: inline; margin: 1ex;}
+title {font-weight: bold;}
+price {font-weight: bold; color: red;}

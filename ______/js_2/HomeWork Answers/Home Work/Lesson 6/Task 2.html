@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <script>
+        // Обработчик события вешаем на объект window, чтобы отследить какие события происходят с окном браузера
+        window.addEventListener('keydown', function (e) {
+            var inputs = document.getElementsByTagName('input');
+            // Нажатие на r
+            if(e.keyCode == 82){
+                for(var i = 0; i< inputs.length; i++){
+                    inputs[i].style.backgroundColor = 'red';
+                }
+            }
+            // Нажатие на g
+            else if(e.keyCode == 71){
+                for(var i = 0; i< inputs.length; i++){
+                    inputs[i].style.backgroundColor = 'green';
+                }
+            }
+            // Нажатие на b
+            else if(e.keyCode == 66){
+                for(var i = 0; i< inputs.length; i++){
+                    inputs[i].style.backgroundColor = 'blue';
+                }
+            }
+        })
+    </script>
+</head>
+<body>
+<div>Работает только на английской раскладке</div>
+<input type="text"/><input type="text"/><input type="text"/>
+</body>
+</html>

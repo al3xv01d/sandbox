@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="006 if.xsl"?>
+<demo56>
+	<item name="Компьютер" color="красный" onstore="yes" />
+	<item name="Мышка" color="синий" />
+	<item name="Монитор" color="желтый" onstore="yes" />
+	<item name="Монитор 2" color="Мой мега цвет" onstore="yes" />
+</demo56>

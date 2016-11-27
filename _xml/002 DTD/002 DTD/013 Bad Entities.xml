@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE items [
+  <!ENTITY item-start "<item>">
+  <!ENTITY item-end "</item>">
+]>
+<items>
+  &item-start; some text %item-end; &item-end;
+</items>

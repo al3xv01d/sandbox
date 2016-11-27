@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<persons xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="002 XML Scheme.xsd">
+  <client>
+    <name>string</name>
+    <birthdate>2003-07-01</birthdate>
+    <!--<pasport>string</pasport>-->
+  </client>
+  <clerk>
+    <name>Имя</name>
+    <birthdate>2001-11-09</birthdate>
+    <!--<id>id1</id>-->
+  </clerk>
+</persons>

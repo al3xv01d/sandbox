@@ -1,0 +1,12 @@
+﻿notebook {
+    background: red;
+}
+person {
+    border: 10px solid black;
+}
+name {
+    font-weight: bold;
+}
+phone {
+    text-decoration: underline;
+}

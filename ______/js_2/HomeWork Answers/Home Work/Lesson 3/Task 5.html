@@ -1,0 +1,28 @@
+<head>
+    <title>Task 5</title>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript">
+        window.onload = function(){
+            // Событие onblur срабатывает после выхода из тега input
+            document.getElementById("value").onblur = function () {
+                // Получаем значение введеное пользователем из input
+                var value = document.getElementById("value").value;
+                // Создаем элемент marquee - бегущая строка
+                var newElement = document.createElement("marquee");
+                // Добавляем атрибуты к созданному элементу
+                newElement.setAttribute("behavior","alternate");
+                newElement.setAttribute("direction","left");
+                // Вносим полученные данные от пользователя в новый элемент
+                newElement.innerHTML = value;
+                // Добавляем элемент на страницу
+                document.body.appendChild(newElement);
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="value"
+       type="text"/>
+
+</body>
+</html>

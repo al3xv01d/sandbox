@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/xsl" href="013 XslDemo01.xsl"?>
+
+<BOOK>
+  <TITLE>Moby-Dick</TITLE>
+  <AUTHOR>
+    <FIRSTNAME>Herman</FIRSTNAME>
+    <LASTNAME>Melville</LASTNAME>
+  </AUTHOR>
+  <BINDING>hardcover</BINDING>
+  <PAGES>724</PAGES>
+  <PRICE>$9.95</PRICE>
+</BOOK>

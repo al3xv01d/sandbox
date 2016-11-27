@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root"></xs:element>
+  <xs:element name="fullname" type="personInfo" />
+  <xs:complexType name="personInfo">
+    <xs:attribute name="firstname" type="xs:string" />
+    <xs:attribute name="lastname" type="xs:Name" />
+  </xs:complexType>
+</xs:schema>

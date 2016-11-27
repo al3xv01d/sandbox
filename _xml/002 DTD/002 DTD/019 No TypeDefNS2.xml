@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map [
+	<!ENTITY copyright "Copyright me 2012">
+]>
+<map cpr="&copyright;">
+	<location name="house" lat="30"/>
+</map>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="011 XML Scheme complexType5.xsd">
+  <city>Киев</city>
+  <state>-129</state>
+  <!--<state>127</state>-->
+  <street>Улица</street>
+  <author>
+    <article>Заголовк</article>
+    <book>Книга</book>
+    <whitepaper>Белая бумага</whitepaper>
+  </author>
+</person>

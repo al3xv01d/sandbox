@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book [
+	<!ELEMENT book (chapter+)>
+	<!ELEMENT chapter (title, p+)>
+	<!ELEMENT p (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ENTITY chap1 SYSTEM "chapter1.xml">
+	<!ENTITY chap2 SYSTEM "chapter2.xml">
+	<!ENTITY chap3 SYSTEM "chapter3.xml">
+]>
+<book>
+	<chapter>&chap1;</chapter>
+	<chapter>&chap2;</chapter>
+	<chapter>&chap3;</chapter>
+</book>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="002 ns.xsl"?>
+<!-- выполнение преобразований с именнованными пространствами имен -->
+<!-- НАЧАЛО -->
+<pricelist xmlns="http://мойсайт/courses/xml/">
+	<book>
+		<title>XML и IE5</title>
+		<author>Алекс Гомер</author>
+		<price>200</price>
+	</book>
+	
+	<book>
+		<title>Dinamic HTML</title>
+		<author>Алекс Хоумер</author>
+		<price>120</price>
+	</book>
+	
+	<book>
+		<title>Технология XSLT</title>
+		<author>Алексей Валиков</author>
+		<price>150</price>
+	</book>
+</pricelist>
+<!-- КОНЕЦ -->

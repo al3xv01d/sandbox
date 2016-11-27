@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <script type="text/javascript">
+        // С помощью флага можем определить была ли нажата кнопка
+        var flag = false;
+        var text;
+        window.onload = function () {
+            var button = document.getElementById('save');
+            button.addEventListener('click', function () {
+                // Изменили флаг
+                flag = true;
+            })
+        }
+        window.onbeforeunload = function () {
+            // Получили размер введенных данных
+            text = document.getElementById('text').value.length;
+            // Проверка и вывод окна
+            if (!flag && text !=0) {
+                return 'Вы не сохранили данные!';
+            }
+        }
+    </script>
+    <style>
+        #text {
+            width: 500px;
+            height: 300px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<textarea id="text"
+          cols="30"
+          rows="10"></textarea>
+<input type="button"
+       value="Сохранить"
+       id="save"/>
+</body>
+</html>

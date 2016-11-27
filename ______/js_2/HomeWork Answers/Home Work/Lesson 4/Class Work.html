@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Work</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: green;
+            color: white;
+            margin: 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        // Получаем доступ ко всем div на странице
+        var div = document.getElementsByTagName("div");
+        // Счетчик
+        var count = 0;
+        // Обработчик события
+        window.onload = function(){
+            document.getElementsByTagName("input")[0].onclick = function () {
+                // Проверка на счетчик (дошел до последнего элемента?)
+                if (count > 4) {
+                    // Когда дойдет счетчик до 5, то он обнулится
+                    count = 0;
+                    // Последний div перекрашиваем в зеленый
+                    div[4].style.backgroundColor = "green";
+                }
+                // С помощью цикла проходим по массиву div и меням по значение счетчика
+                for (var i = 0; i < count; i++) {
+                    div[i].style.backgroundColor = "green";
+                };
+                // Меняем цвет заливки указаного div на красный
+                div[count].style.backgroundColor = "red";
+                // Увеличиваем значение счетчика
+                count++;
+
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<input type="Button"
+       value="Click"/>
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE TEXT[
+  <!ENTITY today "Октябрь 15, 2007">
+  <!ENTITY company "Рога и копыта">
+  <!ENTITY nbsp "____">
+]>
+<TEXT>
+  Текст про &company; а тут типа пробел     &nbsp; в тексте
+</TEXT>

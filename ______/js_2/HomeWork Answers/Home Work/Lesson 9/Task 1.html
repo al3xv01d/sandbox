@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+    <script>
+        window.onload = function(e){
+            e.target.addEventListener('click',function(e){
+                var img = document.img;
+                if(e.target.value === 'HTML'){
+                    img.src = 'img/html.jpg';
+                }
+                if(e.target.value === 'CSS'){
+                    img.src = 'img/css.jpg';
+                }
+                if(e.target.value === 'JavaScript'){
+                    img.src = 'img/js.png';
+                }
+            })
+        }
+    </script>
+    <style>
+        body{
+            display: table-caption;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="HTML"/><input type="button" value="CSS"/><input type="button" value="JavaScript"/>
+<img src="" name="img"/>
+</body>
+</html>

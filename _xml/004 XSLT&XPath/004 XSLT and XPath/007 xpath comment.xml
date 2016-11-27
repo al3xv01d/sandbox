@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="007 xpath comment.xslt"?>
+<pricelist>
+  <book>
+    <title>XML и IE5</title>
+    <author>Алекс Гомер</author>
+    <price>200</price>
+  </book>
+
+  <book>
+    <title>Dinamic HTML</title>
+    <author>Алекс Хоумер</author>
+    <price>120</price>
+  </book>
+
+  <book>
+    <title>Технология XSLT</title>
+    <author>Алексей Валиков</author>
+    <price>150</price>
+  </book>
+  <!--Желательно обрабатывать все узлы-->
+</pricelist>

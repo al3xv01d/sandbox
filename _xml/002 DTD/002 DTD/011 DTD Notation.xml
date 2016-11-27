@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu [
+  <!ELEMENT menu (menuitem*)>
+  <!ELEMENT menuitem EMPTY>
+  <!ATTLIST menuitem 
+    img ENTITY #REQUIRED 
+   title CDATA  #REQUIRED 
+   href CDATA  #IMPLIED>
+  <!NOTATION png  SYSTEM "С:\Windows\System32\mspaint.exe">
+  <!ENTITY home SYSTEM "images/home.png" NDATA png>
+  <!ENTITY about SYSTEM "images/about.png" NDATA png>
+]>
+<menu>
+  <menuitem img="home" title="Home page" href="home.html" />
+  <menuitem img="about" title="About as" href="about.html" />
+</menu>
